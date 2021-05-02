@@ -1,0 +1,19 @@
+
+                    <article>
+                        <a href="/products/<%= product.id %>">
+                            <img src="/images/<%= product.image %>" alt="<%= product.name %>" class="product_img">
+                         </a>              
+
+                            <div class="main-article">
+                                <i class="fas fa-truck"></i>
+                                <p class="precio">$ <%= product.price %>
+                                </p>
+                                <p class="descuentos">
+                                    <%= product.descuento %> % off
+                                </p>
+                                <h4 class="descripcion">
+                                    <%= product.name %>
+                                </h4>
+                            </div>
+                      
+                    </article>

@@ -1,0 +1,594 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin:0px;
+    padding: 0px;
+}
+
+body {
+        background-color: #ebebeb;        
+}
+    h3{
+        font-size: 24px;
+    }
+    
+    header{
+        background-color: #EAC926;  
+        padding: 20px;  
+        position: fixed;
+        width: 100%;
+        top: 0;     
+        z-index: 100;   
+    }
+
+        div.contenedorLogo-cuotas-buscador{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2%;
+        }
+            div.logoML img{
+                width: 200px;
+            }
+            div.buscador{
+                display: flex;               
+            }
+
+    
+    header div.logoML, header div.buscador{
+        padding: 2px;        
+    }
+
+    header nav{
+       margin-left: 20px;
+       margin-right: 20px;
+       display: none;
+       padding: 10px;
+        
+    }
+
+    header ul li{
+        list-style: none;
+    }
+
+    header ul li a{
+        text-decoration: none;
+        color: #000;
+        display: inline-block;
+        
+    }
+    .buscador{
+        display: flex;
+    }
+
+    .miF{
+        width: 100%;
+        display: flow-root;
+    }
+    header .buscador .text{
+        background-color: #FFF;
+        border: 1px solid #000;
+        outline: none;
+        color: #666;
+        padding: 2px;
+    }
+
+    header .buscador .submit{
+        background-color: #FFF;
+        border: 1px solid #000;
+        color: #666;
+        width: 10%;
+    }
+
+    div.buscador input[type=text]{
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        width: 100%;
+    }
+    div.buscador button[type=submit]{
+        background-color: #ffffff;
+        border: 0;
+        position: absolute;
+        top: 41%;
+        transform: translate(-110%, -50%);
+        padding: 0 0px 0 5px;
+    }
+    .fa-search::before {
+        content: "\f002";
+        font-size: 20px;
+        color:#666        
+    }
+
+    div.burger-menu{
+        text-align: center;
+        
+    }
+
+    .burger-menu i{
+        background-color: #0044AA;
+        border-radius: 5px;
+        color: #FFF;
+        font-size: 20px;
+        height: 40px;
+        margin: 10px 0px 20px 0px;
+        padding: 10px;
+        width: 40px;
+    }
+
+
+
+.ultima-visita, .ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .precio{
+        font-size: 18px;
+        width: 30%;
+    }
+
+    .descuentos{
+        color: #39b54a;
+    }
+
+    .descuento, .descripcion{
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    h3, .descripcion{
+        color: #666;
+    }
+
+    .descripcion{
+        opacity: 0;
+        margin-top: 20px;
+        transition: opacity 1s;
+    }
+        .descripcion:hover{
+            opacity: 1;
+        }
+
+section.banner img{
+    width: 100%;
+    margin-top: 240px
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: white;
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+footer{
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #666;
+    padding: 25px;
+    font-size: 12px;
+    
+}
+    footer h3{
+        font-size: 20px;
+    }
+    .articuloWidth{
+        margin: 25px 15px;
+    }
+.logo{
+    color: #1259c3;
+    font-size: 2em;
+    line-height: 10px;
+    transition: color 350ms;
+}
+    .logo:hover{
+        color:#39b54a;
+    }
+
+
+/***************INICIO DEL CSS DE LA PÁGINA DE REGISTRO DE USUARIO********************/
+
+
+
+
+
+
+.formularioR{
+    margin-top: 250px;
+}
+
+
+.registroh1, .registerform{
+    padding: 20px 32px 0px;
+    color: #00000073;
+    
+}
+    .controlador-form{
+        margin-bottom: 15px;
+             
+    }
+    .controlador-form label{
+        margin-bottom: 5px;
+        display: block;
+        
+    }   
+        
+    .controlador-form input{
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        
+    }
+  
+    input#fecha{
+        color:#00000073;
+    }      
+
+  
+.contenedorBotones{
+    margin-bottom: 5%;
+}
+    .contenedorBotones button{
+        background-color: #4bb459;
+        border: none;
+        font-size: 20px;
+        color: white;
+        padding: 14px 32px;
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 5%;
+        
+    }
+
+h4#perfil{
+    margin-bottom: 10px;
+
+}
+.perfiles{
+    margin-bottom: 10px;
+}   
+    label#harta{
+        margin-left: 5px;
+    }
+
+
+.contenedor-intereses{
+    margin-bottom: 10px;
+}    
+
+    h4#intereses{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }    
+
+    input[type=checkbox]{
+        vertical-align: middle;
+        position: relative;
+        bottom: 1px;
+        margin: 10px;
+    }
+    .intereses{
+        display: block;
+    }
+
+ #userPick{
+    margin-top: 5px;
+ }
+   
+
+/*---------------INICIO DEL CSS DE LA PÁGINA DE LOGIN----------------------------*/
+
+.login-main{
+    margin-top: 260px;
+
+}
+.login-form, .inicioS{
+    padding: 20px 32px 0px;
+    color: #00000073;
+
+}
+    .control-login-form{
+        margin-bottom: 15px;
+
+    }
+
+    .control-login-form label{
+        margin-bottom: 5px;
+        display: block;
+        
+    }
+   
+        
+    .control-login-form input{
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+    }
+   
+
+    .control-login-formBut button{
+        background-color: #39b54a;
+        border: none;
+        font-size: 20px;
+        color: white;
+        padding: 14px 32px;
+        border-radius: 5px;
+        width: 100%;        
+        transition: background-color 450ms;
+        margin-bottom: 5%;
+        
+    }
+
+    .control-login-formBut button:hover{
+        background-color: #0022AA;
+
+    }
+
+
+@media (min-width: 361px){
+   
+    main section article{
+        transition: box-shadow 450ms;
+    }
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section div.tarjetas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    
+    /*tarjetas*/
+    .precio, .descuento{
+        width: 50%;
+    }
+    .buscador{
+        margin: left;
+
+    }
+
+   /*INICIO DEL CSS DE LA PÁGINA DE REGISTRO DE USUARIO*/
+
+}
+
+
+
+
+@media (min-width: 769px){
+    section.banner img{
+        margin-top: 180px;
+    }
+
+  
+    div.burger-menu{
+        display: none;
+    }
+    
+    main section div.tarjetas article{
+        width: 45%;
+    }
+    
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+        nav ul{
+            display: flex;    
+            font-size: 14px;        
+
+        }
+        nav li{
+            margin: 0 8px;
+            
+        }
+
+    
+        div.contenedorLogo-cuotas-buscador{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: space-between;
+        } 
+
+        div.contenedorLogo-cuotas-buscador #cuotas{
+            text-align: right;
+        }
+        
+        div.buscador{
+            display: flex;
+            width: 40%;
+            height: 40px;
+            margin: auto;
+                       
+        }
+        div.buscador button[type=submit]{
+            
+            top: 39%;
+            
+        }
+        div.logoML{
+            margin-right: 12px;
+        }
+
+        div.buscador input[type=text]{
+        flex: 5 1 auto;
+        }
+    footer{
+        font-size: 12px;
+        
+    }
+        footer h3 {
+          font-size: 16px;
+        }
+
+        .parrafosfooter{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+/*INICIO DEL CSS DE LA PÁGINA DE REGISTRO DE USUARIO*/
+.controlador-form input{
+    width: 80%;
+}
+.controlador-form button{
+    width: 30%;
+}
+
+.formularioR{
+    margin-top: 220px;
+}
+
+.contenedorBotones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+    .contenedorBotones button{
+        background-color: #4bb459;
+        border: none;
+        font-size: 20px;
+        color: white;
+        padding: 14px 32px;
+        border-radius: 5px;
+        margin-right: 15px;
+        transition: background-color 450ms;
+        width: auto;
+        margin-top: auto;
+    }
+        .contenedorBotones button:hover{
+            background-color: #0022AA;
+        }
+
+/*INICIO DEL CSS DE LA PÁGINA DE LOGIN*/
+
+.login-main {
+    margin-top: 210px;
+}
+.login-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.control-login-form input{
+    width: 80%;
+    
+    height:50px;
+}
+
+.control-login-formBut{
+    max-width: 164px;
+}
+
+}
+
+@media (min-width: 1200px){
+  
+    section.banner img{
+        margin-top: 180px;
+    }
+
+    .logoML{
+        width: 250px;
+    }
+    
+    .contenedorLogo-cuotas-buscador, .buscador, nav{
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    nav ul{
+        font-size: 18px;
+    }
+
+    div.buscador{
+        display: flex;
+        width: 40%;
+        height: 40px;
+        margin: auto;
+    }    
+    
+    footer{
+        font-size: 14px;
+
+    }
+        .articuloWidth{
+            width: 30%;
+
+        }
+
+    main section div.tarjetas article{
+        width: 22%;
+    }
+
+
+   /*INICIO DEL CSS DE LA PÁGINA DE REGISTRO DE USUARIO*/
+
+   .controlador-form input{
+    width: 70%;
+   }
+
+   /*INICIO DEL CSS DE LA PÁGINA DE LOIN*/
+   .control-login-form input{
+    width: 50%;
+    height:50px;
+}
+
+}
+
+
+
+
+
+    
+
+    

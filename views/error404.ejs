@@ -1,0 +1,41 @@
+
+                    <form action="/products/<%=  product.id %>?_method=PUT" method="POST">
+
+                        <div class="field">
+                            <label for="name">Nombre</label>
+                            <div class="control">
+
+                                <input type="text" name="name" value="<%= product.name : '' %>">
+                            </div>
+
+                        </div>
+
+                        <div class="field">
+                            <label for="image">Imagen</label>
+                            <div class="control">
+                                <input type="file" name="image" value="<%= product.image : '' %>">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="price">Precio</label>
+                            <div class="control">
+                                <input type="text" name="price" value="<%= product.price : '' %>">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="descuento">descuento</label>
+                            <div class="control">
+
+                                <input type="text" name="descuento" value="<%= product.descuento : '' %>">
+                            </div>
+                        </div>
+
+
+                        <div class="field">
+                            <div class="control">
+                                <button type="submit">Editar producto</button>
+                            </div>
+                        </div>
+                    </form>

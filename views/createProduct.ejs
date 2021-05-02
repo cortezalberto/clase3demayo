@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('partials/head') %>
+
+    <body>
+
+        <%- include('partials/header') %>
+
+
+            <section class="banner">
+                <img src="/images/img-home-banner.jpg" alt="Banner de ofertas">
+            </section>
+
+
+            <main>
+                <h3>Alta de Producto</h3>
+                <section class="ultima-visita">
+
+
+
+
+
+                    <form action="/products/store" method="POST" enctype="multipart/form-data">
+<!-- Cuando se ingresa por primera vez al formulario de CREATE, es obivio
+que el controlador todavía no contesta ningún error, Es por eso
+que la variable erroresEncontrados NO EXISTE.
+Pero luego de la validación existe como tal y eso se relaciona con LOCALS
+-->
+
+ <!-- Un detalle importante en la validación es que si se producen errores en los campos
+    cuando se vuelve a la pantalla de Creación se borran los campos que 
+    estaban bien y hay que volverlos a ecribir, eso no está bien, nosotros
+    deseamos recuperar los datos devueltos por el Post en el Body (campos Devueltos)
+   --> 
+                        <% if (locals.erroresControlados ) { %>
+
+
+
+                            <% for( let i in erroresControlados ) { %>
+
+                                <p>
+                                    <%= erroresControlados[i].msg %>
+                                </p>
+
+                                <% } %>
+
+
+                   <% } %>
+
+                                        <div class="field">
+                                            <label for="name">Nombre</label>
+                                            <div class="control">
+                                                <input type="text"
+                                                 name="name"
+                                                                      
+                                                 value ="<%= locals.camposDevueltos ? camposDevueltos.name : null %> "
+                                                 >
+                                                     <!--   el value recupera el dato cargado, para no volver a tipear -->
+                                            </div>
+                                            <div class="danger">
+                                                <!--   cuidado con el If -->
+
+                                                <% if (locals.erroresControlados && erroresControlados.name) { %>
+                                                    <p>
+                                                        <%= erroresControlados.name.msg %>
+                                                    </p>
+                                                    <% } %>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="field">
+                                            <label for="image">Imagen</label>
+                                            <div class="control">
+                                                <input type="file" name="image">
+                                            </div>
+
+                                            <% if (locals.erroresControlados && erroresControlados.image) { %>
+                                                <p>
+                                                    <%= erroresControlados.image.msg %>
+                                                </p>
+                                                <% } %>
+
+                                        </div>
+
+                                        <div class="field">
+                                            <label for="price">Precio</label>
+                                            <div class="control">
+                                                <input type="text" name="price"
+                                                value ="<%= locals.camposDevueltos ? camposDevueltos.price : null %> "
+                                                >
+                                            </div>
+                                            <div class="danger">
+                                                <!--   cuidado con el If -->
+
+                                                <% if (locals.erroresControlados && erroresControlados.price) { %>
+                                                    <p>
+                                                        <%= erroresControlados.price.msg %>
+                                                    </p>
+                                                    <% } %>
+
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="field">
+                                            <label for="descuento">descuento</label>
+                                            <div class="control">
+
+                                                <input type="text" name="descuento"
+                                                
+                                                value ="<%= locals.camposDevueltos ? camposDevueltos.price : null %> "
+                                               
+                                                >
+                                            </div>
+                                            <div class="danger">
+                                                <!--   cuidado con el If -->
+
+                                                <% if (locals.erroresControlados && erroresControlados.descuento) { %>
+                                                    <p>
+                                                        <%= erroresControlados.descuento.msg %>
+                                                    </p>
+                                                    <% } %>
+
+
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+                                        <div class="field">
+                                            <div class="control">
+                                                <button type="submit">Crear producto</button>
+                                            </div>
+                                        </div>
+                    </form>
+
+
+
+                    </div>
+                </section>
+
+
+
+
+
+            </main>
+            <%- include('partials/footer') %>
+
+
+    </body>
+
+</html>
